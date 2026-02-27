@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rendering</title>
+    <link rel="icon" type="image/x-icon" href="icon/icon.png"/>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #261da3;
+            background-image: none;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            position: relative;
+            height: 100vh;
+            overflow: hidden;
+            text-align: center;
+            color: white;
+            padding: 0;
+            margin: 0;
+        }
+
+        .video-container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+
+        .video-container video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 1;
+        }
+
+        .header-content {
+            position: relative;
+            z-index: 2;
+            top: 50%;
+            transform: translateY(-50%);
+            padding: 20px;
+            color: #fff;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+        }
+
+        .header-content h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+
+        .header-content p {
+            font-size: 1.5em;
+        }
+
+        nav {
+            background: #959c6c;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #000000;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 40px 20px;
+        }
+
+        .services, .gallery, .contact {
+            background: #c0dacc;
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background: #333;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .gallery-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .gallery-container img {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #78b6bb;
+            border-radius: 5px;
+        }
+
+        @media (max-width: 768px) {
+            .gallery-container img {
+                width: 100%;
+            }
+
+            .header-content h1 {
+                font-size: 32px;
+            }
+
+            .header-content p {
+                font-size: 1.2em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="video-container">
+            <video autoplay muted loop playsinline>
+                <source src="videos/111.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="header-content">
+                <h1>N-SIM Rendering Construction Group</h1>
+                <p>Transforming Spaces. Building Trust.</p>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+       <a href="#about" style="font-size: 50px;">About</a>
+        <a href="#services" style="font-size: 50px;">Services</a>
+        <a href="#gallery" style="font-size: 50px;">Gallery</a>
+        <a href="#contact" style="font-size: 50px;">Contact</a>
+
+    </nav>
+<a href="mobile.html" style="font-size: 50px;">Mobile , Computer and Electronic device Repairing</a>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>With over a decade of experience, we deliver high-quality rendering and construction services that stand the test of time. Our mission is to exceed client expectations through professionalism, craftsmanship, and reliability.
+            Make and Install Moulding very professionaly.
+        </p>
+        <ul>
+            <li>✔ Licensed & Insured</li>
+            <li>✔ 15+ Years of Experience</li>
+            <li>✔ Guaranteed Workmanship</li>
+        </ul>
+    </section>
+
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <h3>Rendering</h3>
+        <ul>
+            <li>Cement & Acrylic Rendering</li>
+            <li>Textured Finishes</li>
+            <li>Concrete Finish (pro)</li>
+            <li>Polished Concrete</li>
+        </ul>
+
+        <h3>Construction</h3>
+        <ul>
+            <li>New Builds</li>
+            <li>Renovations & Extensions</li>
+            <li>Fit-Outs & Framing</li>
+        </ul>
+
+        <h3>Moulding</h3>
+        <ul>
+            <li>Exterior</li>
+            <li>Make and Install</li>
+            <li>Repair Work</li>
+        </ul>
+    </section>
+
+    <section id="gallery" class="gallery">
+        <h2>Our Work</h2>
+        <p>Explore some of our recent residential and commercial projects.</p>
+        <div class="gallery-container">
+            <img src="photos/1.jpeg" alt="Project 1">
+            <img src="photos/2.jpeg" alt="Project 2">
+            <img src="photos/3.jpeg" alt="Project 3">
+            <img src="photos/4.jpeg" alt="Project 4">
+            <img src="photos/5.jpeg" alt="Project 5">
+            <img src="photos/6.jpeg" alt="Project 6">
+            <img src="photos/7.jpeg" alt="Project 7">
+            <img src="photos/8.jpeg" alt="Project 8">
+            <img src="photos/9.jpeg" alt="Project 9">
+            <img src="photos/10.jpeg" alt="Project 10">
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p>Let’s start your project. Reach out for a quote or consultation.</p>
+        <form action="https://formspree.io/f/mbladbrp" method="post">
+            
+            <label>Name:<br><input type="text" name="name"></label><br>
+            <label>Email:<br><input type="email" name="email"></label><br>
+            <label>Phone:<br><input type="tel" name="phone"></label><br>
+            <label>Message:<br><textarea name="message" rows="4"></textarea></label><br>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>📍 Serving: Melbourne VIC 📞 0498 628 433 | 📧 nasimkarimi6689@gmail.com</p>
+        <p>&copy; 2000 Rendering Construction Group. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
